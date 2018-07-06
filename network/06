@@ -1,0 +1,2 @@
+The file, which contains information about the operational parameters of the DNS resolver and can be used to configure the system's DNS is called resolv.conf. I found it in the standart directory named "etc" in the computer's root repository.
+Full pass: /etc/resolv.conf

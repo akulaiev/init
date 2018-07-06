@@ -1,0 +1,1 @@
+I've made the Internet research, which gave me the name of this file. Then I just needed to use the man to confirm this information. From the man pages I found out, that this file is in the same folder, as resolv.conf and it's address is: /etc/hosts.

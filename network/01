@@ -1,1 +1,1 @@
-ifconfig | grep "^[a-z]" | cut -d : -f 1
+ifconfig
