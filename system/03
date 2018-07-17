@@ -1,0 +1,1 @@
+Changes, commited to the hostname via "hostname newname" command are not permanent, and last only for the time of the current login. To make permanent changes it's nessesary to modify the "hostname" file located in "etc" directory, or to run the command "hostnamectl set-hostname newname".
