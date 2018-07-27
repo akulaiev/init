@@ -1,0 +1,1 @@
+If the keys are already created, they are located in "authorized_keys" file in the ".ssh" directory of the user's root folder. For my system, the path to this directory is "home/anna/.ssh". But in my case this folder is empty. If needed, the keys can be created via "ssh-keygen" command and then copied to the "authorized_keys" file via "ssh-copy-id" command.

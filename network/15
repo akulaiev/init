@@ -1,0 +1,1 @@
+To do this I normally had to open the "hosts" file via /etc/hosts pass and to change the default IP of the cdn.intra.42.fr address for the one needed. But for me this file had read only permission, so I tried to change it using two respective commands: chmod and sudo. Howewer I still didn't get the permission, so the default IP in file stayed the same.

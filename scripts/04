@@ -1,0 +1,4 @@
+echo "test -e /var/log/sum.log || md5sum /etc/crontab >> /var/log/sum.log
+md5sum /etc/crontab | md5sum -c --status /var/log/sum.log || mail
+
+" >> /var/log/check_script
