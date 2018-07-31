@@ -1,4 +1,6 @@
-echo "test -e /var/log/sum.log || md5sum /etc/crontab >> /var/log/sum.log
-md5sum /etc/crontab | md5sum -c --status /var/log/sum.log || mail
+test -e /var/log/sum.log || md5sum /etc/crontab >> /var/log/sum.log
+test -e /var/log/mail_text || echo "Crontab file (pass: etc/crontab) was modified." >> /var/log/mail_text
+md5sum /etc/crontab | md5sum -c --status /var/log/sum.log || mail -s "ALERT!" root < /var/log/mail_text
 
-" >> /var/log/check_script
+# Uncomment and add pass to this script, to schedule via crontab file
+#(crontab -l && echo "00 00 * * * pass to init/scripts/04") | crontab -
